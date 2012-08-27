@@ -14,8 +14,7 @@ $(document).ready(function(){
     })
     $('input#write').keydown(function(event){
         if(event.which == 13){
-            $.get('sm.php?m=' + $("input#write").attr('value'));
-            $("input#write").attr('value',"");
+            $("button#send").click();
         }
     })
 })
