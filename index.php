@@ -1,6 +1,8 @@
 <?php
+    // Start the session and check if the session is valid.
     session_start();
     if ($_SESSION['valid']):
+        // Its correct, so load the chat
 ?>
 <html>
     <head>
@@ -20,6 +22,7 @@
 <?php
     endif;
     if (!($_SESSION['valid'])){
+        // If the session isnt initialized or no valid
         unset($_SESSION['uname']);
         unset($_SESSION['valid']);
         header("Location: login.html");
