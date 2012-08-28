@@ -1,0 +1,37 @@
+#wrapper {
+    display: block;
+    margin: auto;
+    width: 960px;
+}
+#usersBox {
+    width: 240px;
+    background-color: lightblue;
+    float: left;
+}
+#chats {
+    background-color: grey;
+    width: 720px;
+    float: left;
+}
+#write {
+    width: 650px;
+}
+.chatbox {
+    background-color: lightgrey;
+    position: absolute;
+    width: 720px;
+    height: 400px;
+    visibility: hidden;
+}
+.chatbox.active {
+    visibility: visible;
+}
+#frameChat {
+    height: 400px;
+}
+#send {
+    width: 69px;
+}
+#chatlist span {
+    margin-left: 10px;
+}

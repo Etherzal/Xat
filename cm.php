@@ -1,6 +1,8 @@
 <?php
-set_time_limit(0);
-while (file_get_contents("sandbox/c") == ""){};
-echo (file_get_contents("sandbox/c"));
-file_put_contents("sandbox/c", "");
+    set_time_limit(0);
+    session_start();
+    $user = $_SESSION['uname'];
+    while (file_get_contents("sandbox/".$user) == ""){};
+    echo (file_get_contents("sandbox/".$user));
+    file_put_contents("sandbox/".$user, "");
 ?>

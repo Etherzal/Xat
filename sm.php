@@ -1,4 +1,6 @@
 <?php
-set_time_limit(0);
-file_put_contents("sandbox/c", $_GET['m']);
+    session_start();
+    $array = explode("|",$_GET['m']);
+    $user = $_SESSION['uname'];
+    file_put_contents("sandbox/".$array[0], $user."|".$array[1]);
 ?>
