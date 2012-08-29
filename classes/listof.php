@@ -1,7 +1,7 @@
 <?php
 class getListOf {
     function users(){
-        $con = mysql_connect("localhost", "root", "vivagoogle");
+        include 'mysql.php';
         // Select the database of Xat
         mysql_select_db("xatdb", $con);
         // Query for obtain the pass and sal of the user
