@@ -1,6 +1,6 @@
 <?php
-    include 'classes/authsys.php';
-    $aus = new aus();
-    $aus->signin($_POST['u'], $_POST['p']);
-    header("Location: index.php")
+    include 'classes/authsys.php'; //Include the auth system
+    $aus = new aus(); //And create a new var
+    $aus->signin($_POST['u'], $_POST['p']); // Use it for register
+    header("Location: index.php") // Redirect
 ?>

@@ -1,12 +1,8 @@
 <?php
-    // Include the class for auth
-    include 'classes/authsys.php';
-    // Start the session
-    session_start();
-    // Create a new aus (AuthSystem)
-    $aus = new aus();
-    // Check if the password is correct
-    if($aus->cLogin($_POST['u'], $_POST['p'])){
+    include 'classes/authsys.php'; // Include the class for auth
+    session_start(); // Start the session
+    $aus = new aus(); // Create a new aus (AuthSystem)
+    if($aus->cLogin($_POST['u'], $_POST['p'])){ // Check if the password is correct
         // Correct
         $_SESSION['uname'] = $_POST['u'];
         $_SESSION['valid'] = true;
