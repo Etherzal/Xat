@@ -4,7 +4,6 @@
             // Database connection
             include 'mysql.php';
             // Select the database of Xat
-            mysql_select_db("xatdb", $con);
             // Query for obtain the pass and sal of the user
             $query = "SELECT pass, sal FROM users WHERE user = '".$_user."'";
             // Send the query
