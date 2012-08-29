@@ -11,6 +11,7 @@ $(document).ready(function(){
     
     $("button#send").click(function(){
         $.get('sm.php?m=' + $(".active").attr("id") + "|" + $("input#write").attr('value'));
+        $(".active").html($(".active").html() + "<br>" + $("input#write").attr('value'));
         $("input#write").attr('value',"");
     })
     $('input#write').keydown(function(event){
