@@ -24,15 +24,15 @@
     <body>
         <div id="wrapper">
             <div id="usersBox">
+                Bienvenido <span id="username"><?php echo $_SESSION['uname'] ?></span>
                 <?php echo $usersList ?>
             </div>
             <div id="chats">
                 <div id="chatList">
-                    <span>Sirikon</span><span>Peter</span>
+                    
                 </div>
                 <div id="frameChat">
-                    <div id="Sirikon" class="chatbox">Aqui Sirikon</div>
-                    <div id="Peter" class="chatbox">Aqui Peter</div>
+                    
                 </div>
                 <div id="writeZone">
                     <input type="text" id="write"><button id="send">Send</button>

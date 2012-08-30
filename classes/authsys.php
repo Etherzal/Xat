@@ -18,6 +18,7 @@
             $n = 10;
             $char= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
             srand((double)microtime()*1000000);
+            $rand = "";
             for($i=0; $i<$n; $i++) {
                 $rand.= $char[rand()%strlen($char)];
             }
@@ -25,6 +26,7 @@
             include 'mysql.php'; // Database connection and select the database
             $query = "insert into users values ('".$_user."','".$passR."','".$rand."')"; // Query for obtain the pass and sal of the user
             mysql_query($query, $con) or die(mysql_error()); // Send the query
+            fopen('sandbox/'.$_user,'w+');
         }
     }
 ?>
