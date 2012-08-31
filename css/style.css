@@ -4,9 +4,10 @@
     width: 960px;
 }
 #usersBox {
-    width: 240px;
-    background-color: lightblue;
+    width: 220px;
+    background-color: lightBlue;
     float: left;
+    padding: 10px;
 }
 #chats {
     background-color: grey;
@@ -33,6 +34,52 @@
 #send {
     width: 69px;
 }
-#chatlist span {
+#chatlist button {
     margin-left: 10px;
+    margin-top: 3px;
+    background-color: grey;
+    border: none;
+}
+
+#chatlist button.active {
+    background-color: lightgrey;
+}
+
+.chatbox p {
+    background-color: white;
+    margin: 8px;
+    padding: 4px;
+    border: solid;
+    border-width: 1px;
+    border-color: darkgrey;
+}
+
+#usersbox li {
+    display: block;
+    padding: 3px;
+    background-color: white;
+}
+
+#usersbox li:hover {
+    cursor: pointer;
+    background-color: lightGoldenrodYellow;
+}
+
+#header {
+    margin: 10px 0px 0px 0px;
+    background-color: lightBlue;
+    padding: 6px;
+}
+
+#header h1 {
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    display: inline;
+}
+
+#desc {
+    display: inline;
+    float: right;
 }
