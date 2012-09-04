@@ -5,6 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
+        <div id="alert"></div>
         <form method="post" action="login.php">
             <label>Log In</label>
             <input type="text" name="u">
@@ -17,5 +18,11 @@
             <input type="password" name="p">
             <input type="submit" value="Sign In">
         </form>
+        <script>
+            var alert = document.URL.split('#');
+            if (alert[1] == 'ss'){
+                document.getElementById('alert').innerHTML = "Registrado con exito";
+            }
+        </script>
     </body>
 </html>

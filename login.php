@@ -6,7 +6,7 @@
         // Correct
         $_SESSION['uname'] = $_POST['u'];
         $_SESSION['valid'] = true;
-        header("Location: index.php");
+        header("Location: /Xat");
     }else{
         // Incorrect
         header("Location: login.html");
