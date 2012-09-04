@@ -9,7 +9,7 @@ function insertMsg(user,msg){
 }
 
 function sendMsg(user,msg){
-    $.get('sm.php?u=' + user + "&m=" + msg);
+    $.get('sm.php?u=' + user + "&m=" + escape(msg));
 }
 
 function getData(){
