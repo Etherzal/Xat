@@ -26,7 +26,7 @@
         <div id="wrapper">
             <div id="header"><h1>Xat</h1><div id="desc"> - A Chat project by Sirikon</div></div>
             <div id="usersBox">
-                Bienvenido <span id="username"><?php echo $_SESSION['uname'] ?></span>
+                Welcome <span id="username"><?php echo $_SESSION['uname'] ?></span> <a href="logout.php">Log Out</a>
                 <?php echo $usersList ?>
             </div>
             <div id="chats">

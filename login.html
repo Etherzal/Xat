@@ -21,7 +21,9 @@
         <script>
             var alert = document.URL.split('#');
             if (alert[1] == 'ss'){
-                document.getElementById('alert').innerHTML = "Registrado con exito";
+                document.getElementById('alert').innerHTML = "Success!";
+            }else if(alert[1] == 'fail'){
+                document.getElementById('alert').innerHTML = "Hey I just met you, and this is crazy, but it was an error, so try again, maybe?";
             }
         </script>
     </body>
