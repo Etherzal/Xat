@@ -1,5 +1,3 @@
 Xat
 ===
-
-Javascript/PHP Chat
-By: Sirikon
+PHP and Javascript chat using technologies like JSON, AJAX, and jQuery
