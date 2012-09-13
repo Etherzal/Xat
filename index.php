@@ -15,6 +15,7 @@
 ?>
 <html>
     <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Xat</title>
         <script src="js/jquery-1.8.0.min.js"></script>
         <script src="js/my.js"></script>
@@ -31,10 +32,10 @@
             </div>
             <div id="chats">
                 <div id="chatList">
-                    
+
                 </div>
                 <div id="frameChat">
-                    
+
                 </div>
                 <div id="writeZone">
                     <input type="text" id="write"><button id="send">Send</button>
